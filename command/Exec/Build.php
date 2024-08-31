@@ -16,6 +16,7 @@
                         ::font("yellow", "", "bold")
                         ::exec("Dependencies installed. Your application is ready to use.");
                     self::vendorHtaccess();
+                    self::configEnv();
                 } else {
                     Helper::time()
                         ::label("Philum")
@@ -26,14 +27,8 @@
                         ::label("Philum")
                         ::font("green", "", "bold")
                         ::exec("Dependencies successfully installed.");
-                    if(!file_exists(".env")) {
-                        Helper::exec("cp .env.example .env", true);
-                        Helper::time()
-                            ::label("Philum")
-                            ::font("green", "", "bold")
-                            ::exec(".env config file successfully created.");
-                    }
                     self::vendorHtaccess();
+                    self::configEnv();
                 }
             } else {
                 if (file_exists($dependenciesFile)) {
@@ -47,6 +42,7 @@
                         ::font("green", "", "bold")
                         ::exec("Updating dependencies successful.");
                     self::vendorHtaccess();
+                    self::configEnv();
                 } else {
                     Helper::time()
                         ::label("Philum")
@@ -75,5 +71,14 @@
             }
         }
     
+        public static function configEnv() {
+            if(!file_exists(".env")) {
+                Helper::exec("cp .env.example .env", true);
+                Helper::time()
+                    ::label("Philum")
+                    ::font("green", "", "bold")
+                    ::exec(".env config file successfully created.");
+            }
+        }
 
     }
