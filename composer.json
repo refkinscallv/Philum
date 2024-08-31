@@ -2,7 +2,7 @@
     "name": "refkinscallv/philum",
     "description": "Simple, Lightweight and Modular traditional PHP Framework. With MVC, Routing and Query Builder/ORM",
     "type": "project",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "require": {
         "php": "^8.0",
         "vlucas/phpdotenv": "^5.6",
