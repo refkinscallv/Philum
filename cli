@@ -1,0 +1,40 @@
+<?php
+
+    if (PHP_SAPI !== 'cli') {
+        die("This script must be run from the command line.");
+    }
+
+    use Philum\CLI\Helper;
+
+    require "command/Helper.php";
+    require "command/Exec/Help.php";
+    require "command/Exec/Start.php";
+    require "command/Exec/Build.php";
+
+    if ($argc > 1) {
+        switch ($argv[1]) {
+            case "start":
+                Philum\CLI\Exec\Start::exec();
+                break;
+            case "build" : 
+                Philum\CLI\Exec\Build::exec('build');
+                break;
+            case "update" : 
+                Philum\CLI\Exec\Build::exec('update');
+                break;
+            case "help" :
+                Philum\CLI\Exec\Help::exec();
+                break;
+            default:
+                Helper::time()
+                    ->label("Error")
+                    ->font("red", "", "bold")
+                    ->exec("Cannot find command: '" . $argv[1] . "'.");
+                break;
+        }
+    } else {
+        Helper::time()
+            ->label("Error")
+            ->font("red", "", "bold")
+            ->exec("Cannot find command.");
+    }

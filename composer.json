@@ -1,0 +1,51 @@
+{
+    "name": "refkinscallv/fw",
+    "description": "Simple, Lightweight and Modular traditional PHP Framework. With MVC, Routing and Query Builder/ORM",
+    "type": "project",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0",
+        "vlucas/phpdotenv": "^5.6",
+        "illuminate/database": "^10.48",
+        "phpmailer/phpmailer": "^6.9",
+        "refkinscallv/router": "^1.0",
+        "refkinscallv/http": "^1.0",
+        "refkinscallv/crypto": "^1.0",
+        "refkinscallv/cookie": "^1.0",
+        "refkinscallv/session": "^1.0"
+    },
+    "require-dev": {
+        "php": "^8.0",
+        "vlucas/phpdotenv": "^5.6",
+        "spatie/ignition": "^1.15",
+        "illuminate/database": "^10.48",
+        "phpmailer/phpmailer": "^6.9",
+        "refkinscallv/router": "^1.0",
+        "refkinscallv/http": "^1.0",
+        "refkinscallv/crypto": "^1.0",
+        "refkinscallv/cookie": "^1.0",
+        "refkinscallv/session": "^1.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Philum\\": "system/",
+            "Philum\\App\\": "app/",
+            "Philum\\CLI\\": "command/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Refkinscallv",
+            "email": "refkinscallv@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/refkinscallv/philum.git"
+        }
+    ]
+}
