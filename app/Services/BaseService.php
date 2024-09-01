@@ -1,6 +1,6 @@
 <?php
 
-    namespace Philum\Packages;
+    namespace Philum\App\Services;
 
     use Philum\Packages\Common;
     use Philum\Packages\Cookie;
