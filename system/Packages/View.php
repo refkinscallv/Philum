@@ -17,11 +17,6 @@
         public function load($file, $data = [], $code = 200) {
             $viewFile = $_SERVER["DOCUMENT_ROOT"] . $_SERVER["VIEW_PATH"] . $file . ".php";
 
-            if (!file_exists($viewFile)) {
-                $this->response->setStatus(404);
-                return;
-            }
-
             extract($data);
 
             ob_start();
