@@ -21,7 +21,7 @@
                 'password'      => $_SERVER["DB_PASS"],
                 'charset'       => $_SERVER["DB_CHARSET"] ?? 'utf8',
                 'collaction'    => $_SERVER["DB_COLLACTION"] ?? 'utf8_unicode_ci',
-                'prefix'        => $_SERVER["DB_PREF"] ?? ''
+                'prefix'        => $_SERVER["DB_PREFIX"] ?? ''
             ]);
 
             $this->manager->setAsGlobal();
