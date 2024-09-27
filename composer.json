@@ -2,9 +2,8 @@
     "name": "refkinscallv/philum",
     "description": "Simple, Lightweight and Modular traditional PHP Framework. With MVC, Routing and Query Builder/ORM",
     "type": "project",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "require": {
-        "php": "^8.0",
         "vlucas/phpdotenv": "^5.6",
         "illuminate/database": "^10.48",
         "phpmailer/phpmailer": "^6.9",
@@ -15,7 +14,6 @@
         "refkinscallv/session": "^1.0"
     },
     "require-dev": {
-        "php": "^8.0",
         "vlucas/phpdotenv": "^5.6",
         "spatie/ignition": "^1.15",
         "illuminate/database": "^10.48",

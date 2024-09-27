@@ -11,9 +11,7 @@
         }
 
         public function index() {
-            $this->view->load("welcome", [
-                "title" => $_SERVER["APP_NAME"]
-            ], 200);
+            $this->view->load("welcome", [], 200);
         }
 
     }

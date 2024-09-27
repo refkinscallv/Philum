@@ -58,7 +58,7 @@
         <div class="position-absolute top-50 start-50 translate-middle w-100 m-auto text-center">
             <div class="mb-5 d-flex align-items-center justify-content-center">
                 <img src="https://philum.callvgroup.net/images/philum.png" alt="<?= $_SERVER["APP_NAME"] ?>" style="height: 50px">
-                <div class="fs-1 fw-bold" style="color: #018080"><em><?= substr($_SERVER["APP_NAME"], 1) ?></em></div>
+                <div class="fs-1 fw-bold" style="color: #018080"><em>hilum</em></div>
             </div>
             <div class="fs-3">
                 <em>Simple, lightweight and modular traditional PHP framework</em>

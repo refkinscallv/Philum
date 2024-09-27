@@ -7,7 +7,7 @@
     class Dotenv {
 
         public function set() {
-            PHPDotenv::createImmutable(str_replace("/", "\\", $_SERVER["DOCUMENT_ROOT"]))->load();
+            PHPDotenv::createImmutable($_SERVER["DOCUMENT_ROOT"])->load();
         }
 
     }
